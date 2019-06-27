@@ -48,16 +48,43 @@ const vols = [{
 }
 ];
 
-
+/*
 //Affichez tous les vols (destination - Date de départ- compagnie aérienne -
 //numero de vol - prix - durée du trajet)
 
+vols.forEach((vol) => {
+  console.log(vol.compagnie_aerienne);
+})
+
 //Afficher tous les vols dont le trajet est inférieur à 7h. (idem)
+
+vols.forEach((vol) => {
+  if
+    (vol.dureeTrajet < '7'){
+     console.log(vol.dureeTrajet);
+  }
+})
 
 //Afficher les vols à destination de Tokyo et qui voyagent avec Air france (idem)
 
+vols.forEach((vol) => {
+  if
+    (vol.compagnie_aerienne === 'Air france'){
+    console.log(vol.destination);
+  }
+})
+
+*/
+
 //Afficher tous les vols dont le tarif est inférieur à 700 euros et qui
 //voyagent avec Air france
+
+vols.forEach((vol) => {
+  if
+    (vol.prix < '700') {
+    console.log(vol.destination);
+  }
+})
 
 //Afficher tous les vols par date :
 //à partir de la date d'aujourd'hui
