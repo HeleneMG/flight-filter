@@ -111,11 +111,10 @@ let vols = [
 vols.forEach((vol) => {
   if
   (vol.date_depart > '12/31/2019'){
-    //vol.prix === (vol.prix - (vol.prix * 0.2));
+    //vol.prix = (vol.prix - (vol.prix * 0.2));
     console.log(vol);
   };
 });
-
 
 //Afficher tous les vols pour Paris organisés entre le "06/02/2019" et le "09/06/2019".
 
@@ -128,6 +127,13 @@ vols.forEach((vol) => {
 
 //Afficher tous les vols qui voyagent avec 'Lufthansa' dont le prix est inférieur à 900 euros
 //et dont la durée du trajet est inférieur à 15 heures
+
+/*vols.forEach((vol) =>{
+  if
+    (vol.compagnie_aerienne === 'Lufthansa' && vol.prix < 900 && vol.dureeTrajet < 15){
+      console.log(vol)
+    }
+});*/
 
 
 
