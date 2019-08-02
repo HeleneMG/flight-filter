@@ -1,4 +1,4 @@
-const vols = [
+let vols = [
 {
   destination: 'Martinique',
   date_depart: '01/25/2019',
@@ -52,70 +52,82 @@ const vols = [
 //Affichez tous les vols (destination - Date de départ- compagnie aérienne -
 //numero de vol - prix - durée du trajet)
 
-console.log(vols)
+//console.log(vols);
 
-//Afficher tous les vols dont le trajet est inférieur à 7h. (idem)
+//Afficher tous les vols dont le trajet est inférieur à 7h. (idem)                   
 
-vols.forEach((vol) => {
+/*vols.forEach((vol) => {
   if
-    (vol.dureeTrajet < '7'){
-     console.log(vol.dureeTrajet);
-  }
-})
+    (vol.dureeTrajet < 7){
+    console.log(vol);
+  };
+});*/
 
 //Afficher les vols à destination de Tokyo et qui voyagent avec Air france (idem)
 
-vols.forEach((vol) => {
+/*vols.forEach((vol) => {
   if
-    (vol.compagnie_aerienne === 'Air france'){
-    console.log(vol.destination);
-  }
-})
-
-
-
-//Afficher tous les vols dont le tarif est inférieur à 700 euros et qui
-//voyagent avec Air france
-
-vols.forEach((vol) => {
-  if
-    (vol.prix < '700') {
+    (vol.compagnie_aerienne === 'Air france' && vol.destination === 'Tokyo'){
     console.log(vol);
   }
-})
+});*/
+
+//Afficher tous les vols dont le tarif est inférieur à 700 euros et qui             
+//voyagent avec Air france
+
+/*vols.forEach((vol) => {
+  if
+    (vol.prix < '700' && vol.compagnie_aerienne === 'Air france'){
+    console.log(vol);
+  };
+});*/
 
 
 //Afficher tous les vols par date :
 //à partir de la date d'aujourd'hui
 
 
-vols.forEach((vol) => {
+/*vols.forEach((vol) => {
   if
-    (vol.date_depart > '06/27/2019') {
+    (vol.date_depart > '08/02/2019') {
     console.log(vol);
   }
-})
+});*/
 
 
 //Afficher tous les vols par date :
 //avant la date d'aujourd'hui
 
-vols.forEach((vol) => {
+/*vols.forEach((vol) => {
   if
-    (vol.date_depart < '06/27/2019') {
+    (vol.date_depart < '08/02/2019') {
     console.log(vol);
   }
-})
+});*/
 
 
 //Appliquer une reduc de 20% sur chaque vol organisé après 2019 et les afficher
 
+vols.forEach((vol) => {
+  if
+  (vol.date_depart > '12/31/2019'){
+    //vol.prix === (vol.prix - (vol.prix * 0.2));
+    console.log(vol);
+  };
+});
+
 
 //Afficher tous les vols pour Paris organisés entre le "06/02/2019" et le "09/06/2019".
 
+/*vols.forEach((vol) => {
+  if
+    (vol.date_depart > '06/02/2019' && vol.date_depart < '09/06/2019') {
+    console.log(vol);
+  }
+});*/
+
 //Afficher tous les vols qui voyagent avec 'Lufthansa' dont le prix est inférieur à 900 euros
 //et dont la durée du trajet est inférieur à 15 heures
-
 
 
 
