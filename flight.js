@@ -110,7 +110,7 @@ let vols = [
 
 vols.forEach((vol) => {
   if
-  (vol.date_depart > '12/31/2019'){
+  (vol.date_depart > '12/31/2020'){
     //vol.prix = (vol.prix - (vol.prix * 0.2));
     console.log(vol);
   };
@@ -134,8 +134,6 @@ vols.forEach((vol) => {
       console.log(vol)
     }
 });*/
-
-
 
 //EXEMPLE TASSES
 
